@@ -26,11 +26,10 @@ namespace VirtualPet_Template
                 Console.WriteLine("Please select an option");
                 Console.WriteLine("1. Feed the pet");
                 Console.WriteLine("2. Play with the pet");
-                Console.WriteLine("3. Give the pet water");
-                Console.WriteLine("4. Give the pet a bath");
-                Console.WriteLine("5. Take pet to use bathroom");
-                Console.WriteLine("6. Take pet to the vet");
-                Console.WriteLine("7. Quit");
+                Console.WriteLine("3. Give the pet water");                
+                Console.WriteLine("4. Take pet to use bathroom");
+                Console.WriteLine("5. Take pet to the vet");
+                Console.WriteLine("10. Quit");
 
 
                 selectedOption = int.Parse(Console.ReadLine());
@@ -43,7 +42,30 @@ namespace VirtualPet_Template
                     case 1:
 
                         myPet.HungerDecrease();
-                        Console.WriteLine("Thank you for feeding the pet");
+                        Console.WriteLine("Thank you for feeding me");
+                        break;
+
+                    case 2:
+
+                        myPet.LessBored();
+                        Console.WriteLine("Thank you for playing a game with me");
+                        break;
+
+                    case 3:
+
+                        myPet.LessSick();
+                        Console.WriteLine("Thank you for giving me water");
+                        break;
+
+                    case 4:
+
+                        myPet.LessThirsty();
+                        Console.WriteLine("Thank you making me feel better");
+                        break;
+
+                    case 5:
+                        myPet.GottaGoLater();
+                        Console.WriteLine("Thank you for taking me to the bathroom");
                         break;
 
                     //TODO we need to add more cases for the other ways to interact with our pet
