@@ -32,7 +32,7 @@ namespace VirtualPet_Template
         //this defaut constructor sets options without giving us any options
         public VirtualPet()
         {
-            this.hiMyNameIs = "Penelope";
+            this.hiMyNameIs = "Glitch";
             this.imHungry = 10;
             this.imBored = 10;
             this.imSick = 10;
@@ -133,6 +133,8 @@ namespace VirtualPet_Template
                
        
         //method for stats of virtual pet
+        //For the sake of not confusing myself, I will keep the status simple for now.
+        //Note to self: MVP-once working add some more stats
         public void MyPetStatus()
         {
             Console.WriteLine(hiMyNameIs);
@@ -140,7 +142,8 @@ namespace VirtualPet_Template
             Console.WriteLine("Boredem " + imBored);
             Console.WriteLine("Health " + imSick);
             Console.WriteLine("Water " + soThirsty);
-            Console.WriteLine("Cleanliness" + gottaGo);
+            Console.WriteLine("Cleanliness" + gottaGo); //hopefully I can find something a little more user friendly
+                                                        //for Cleanliness...Hmmmm???
             //TODO account for more fields
         }
     }

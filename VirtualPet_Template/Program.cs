@@ -15,6 +15,7 @@ namespace VirtualPet_Template
 
 
             //TODO add a greeting for the user. you can also let the user name the pet if you like
+            Console.WriteLine("Hi, my name is, Glitch. Thank you for being my new friend!");
 
             int selectedOption;
 
@@ -24,7 +25,12 @@ namespace VirtualPet_Template
                 Console.WriteLine();
                 Console.WriteLine("Please select an option");
                 Console.WriteLine("1. Feed the pet");
-                Console.WriteLine("10. Quit");
+                Console.WriteLine("2. Play with the pet");
+                Console.WriteLine("3. Give the pet water");
+                Console.WriteLine("4. Give the pet a bath");
+                Console.WriteLine("5. Take pet to use bathroom");
+                Console.WriteLine("6. Take pet to the vet");
+                Console.WriteLine("7. Quit");
 
 
                 selectedOption = int.Parse(Console.ReadLine());
