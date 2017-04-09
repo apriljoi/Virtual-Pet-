@@ -32,7 +32,7 @@ namespace VirtualPet_Template
         //this defaut constructor sets options without giving us any options
         public VirtualPet()
         {
-            this.hiMyNameIs = "Glitch\n";
+            this.hiMyNameIs = "Glitch";
             this.imHungry = 10;
             this.imBored = 10;
             this.imSick = 10;
@@ -126,7 +126,7 @@ namespace VirtualPet_Template
         }
 
         //method for taking to the bathroom
-        public void GottaGoLater()
+        public void GottaGoLater() //original method PottyTime, changed...thinking about ICanWaitToGo for this one
         {
             this.gottaGo = gottaGo - 2;
         }
@@ -137,14 +137,14 @@ namespace VirtualPet_Template
         //Note to self: MVP-once working add some more stats
         public void MyPetStatus()
         {
-            Console.WriteLine(hiMyNameIs);
-            Console.WriteLine("\n");
+            Console.WriteLine(hiMyNameIs); 
+            Console.WriteLine("\n"); //There are some spacing issues in here. I ended up with too much space, but left it that way vs not enought space
             Console.WriteLine("Hunger:  " + imHungry);
             Console.WriteLine("Boredem:  " + imBored);
             Console.WriteLine("Health:  " + imSick);
             Console.WriteLine("Water:  " + soThirsty);
             Console.WriteLine("Bathroom Need:  " + gottaGo); //hopefully I can find something a little more user friendly
-                                                        //for Cleanliness...Hmmmm???
+                                                        //for Cleanliness...Hmmmm??? Problem solved, used Bathroom Need instead
             //TODO account for more fields
         }
     }

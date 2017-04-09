@@ -36,9 +36,9 @@ namespace VirtualPet_Template
                 selectedOption = int.Parse(Console.ReadLine()); //converts user input into a string to be used for interaction
                 Console.WriteLine("\n");
 
-                myPet.MyPetStatus();
+                myPet.MyPetStatus(); //Note to self, Is this calling the class myPet? Figure out why this works...
 
-                switch (selectedOption)
+                switch (selectedOption) //I remember switch case and prefer this option when it is a good fit
                 {
                     //when the user selects option one we feed the pet
                     case 1:
@@ -86,10 +86,15 @@ namespace VirtualPet_Template
                 //TODO We can put method calls here so the pet can have some values change automatically
                 //Feel free to add, remove, or modify which methods are called here
                 myPet.HungerIncrease();
-                myPet.MoreBored();
+                myPet.MoreThirsty();
                 myPet.GottaGoNow();
-
-            } while (selectedOption != 10);
+                //Note to self: I understand that these methods are being called and that's why they work
+                //figure out why calling the method works vs using an if else statement
+                //also figure out if an if else can be used in a loop for more control of what increases and why
+                //for example thirst increasing after eating or playing...
+                
+            } while (selectedOption != 10); //The switch was inside of a loop allowing the magic to happen. 
+                                            //it really makes so much sense now!
 
         }
     }
