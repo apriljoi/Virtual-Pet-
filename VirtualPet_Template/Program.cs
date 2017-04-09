@@ -17,22 +17,23 @@ namespace VirtualPet_Template
             //TODO add a greeting for the user. you can also let the user name the pet if you like
             Console.WriteLine("Hi, my name is, Glitch. Thank you for being my new friend!");
 
-            int selectedOption;
+            int selectedOption; //I understand that this variable was defined for use later
 
-            do
+            do //A do while loop! It makes so much sense now!
             {
                 //TODO fill this out with more options to interact with the pet
-                Console.WriteLine();
-                Console.WriteLine("Please select an option");
-                Console.WriteLine("1. Feed the pet");
-                Console.WriteLine("2. Play with the pet");
-                Console.WriteLine("3. Take pet to the vet");
-                Console.WriteLine("4. Give the pet water");
-                Console.WriteLine("5. Take pet to use bathroom");
+                //Note to self MVP- Add more options later. Make it work first!
+                
+                Console.WriteLine("\nPlease select an option\n");
+                Console.WriteLine("1. Feed me"); //Changed these options to sound like user was actually interacting with pet
+                Console.WriteLine("2. Play a game with me");
+                Console.WriteLine("3. Take me to the vet");
+                Console.WriteLine("4. Give me water");
+                Console.WriteLine("5. Take me to the bathroom");
                 Console.WriteLine("10. Quit");
                 Console.WriteLine("\n");
-                
-                selectedOption = int.Parse(Console.ReadLine());
+
+                selectedOption = int.Parse(Console.ReadLine()); //converts user input into a string to be used for interaction
                 Console.WriteLine("\n");
 
                 myPet.MyPetStatus();
@@ -43,37 +44,37 @@ namespace VirtualPet_Template
                     case 1:
 
                         myPet.HungerDecrease();
-                        Console.WriteLine("Thank you for feeding me\n");
+                        Console.WriteLine("Thank you, the food was yummy!\n");
                         break;
 
-                    case 2:
+                    case 2: //when selected, user plays with the pet
 
                         myPet.LessBored();
-                        Console.WriteLine("Thank you for playing a game with me\n");
+                        Console.WriteLine("Thank you, I had so much fun playing!\n");
                         break;
 
-                    case 3:
+                    case 3: //when selected, user takes Glitch to the vet
 
                         myPet.LessSick();
-                        Console.WriteLine("Thank you for giving me water\n");
+                        Console.WriteLine("Thank you, I feel much better!\n");
                         break;
 
-                    case 4:
+                    case 4: //when selected, user gives pet water
 
                         myPet.LessThirsty();
-                        Console.WriteLine("Thank you making me feel better\n");
+                        Console.WriteLine("Thank you, that water was delicious!\n");
                         break;
 
-                    case 5:
+                    case 5: //when selected, user takes glitch to the bathroom
                         myPet.GottaGoLater();
-                        Console.WriteLine("Thank you for taking me to the bathroom\n");
+                        Console.WriteLine("Thank you for taking me to the bathroom.\n");
                         break;
 
                     //TODO we need to add more cases for the other ways to interact with our pet
 
                     case 10:
 
-                        Console.WriteLine("Thank you for playing.");
+                        Console.WriteLine("Thank you for taking such great care of me.");
                         break;
 
                     default:
@@ -85,6 +86,8 @@ namespace VirtualPet_Template
                 //TODO We can put method calls here so the pet can have some values change automatically
                 //Feel free to add, remove, or modify which methods are called here
                 myPet.HungerIncrease();
+                myPet.MoreBored();
+                myPet.GottaGoNow();
 
             } while (selectedOption != 10);
 
