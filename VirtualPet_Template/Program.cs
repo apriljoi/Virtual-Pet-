@@ -26,13 +26,14 @@ namespace VirtualPet_Template
                 Console.WriteLine("Please select an option");
                 Console.WriteLine("1. Feed the pet");
                 Console.WriteLine("2. Play with the pet");
-                Console.WriteLine("3. Give the pet water");                
-                Console.WriteLine("4. Take pet to use bathroom");
-                Console.WriteLine("5. Take pet to the vet");
+                Console.WriteLine("3. Take pet to the vet");
+                Console.WriteLine("4. Give the pet water");
+                Console.WriteLine("5. Take pet to use bathroom");
                 Console.WriteLine("10. Quit");
-
-
+                Console.WriteLine("\n");
+                
                 selectedOption = int.Parse(Console.ReadLine());
+                Console.WriteLine("\n");
 
                 myPet.MyPetStatus();
 
@@ -42,30 +43,30 @@ namespace VirtualPet_Template
                     case 1:
 
                         myPet.HungerDecrease();
-                        Console.WriteLine("Thank you for feeding me");
+                        Console.WriteLine("Thank you for feeding me\n");
                         break;
 
                     case 2:
 
                         myPet.LessBored();
-                        Console.WriteLine("Thank you for playing a game with me");
+                        Console.WriteLine("Thank you for playing a game with me\n");
                         break;
 
                     case 3:
 
                         myPet.LessSick();
-                        Console.WriteLine("Thank you for giving me water");
+                        Console.WriteLine("Thank you for giving me water\n");
                         break;
 
                     case 4:
 
                         myPet.LessThirsty();
-                        Console.WriteLine("Thank you making me feel better");
+                        Console.WriteLine("Thank you making me feel better\n");
                         break;
 
                     case 5:
                         myPet.GottaGoLater();
-                        Console.WriteLine("Thank you for taking me to the bathroom");
+                        Console.WriteLine("Thank you for taking me to the bathroom\n");
                         break;
 
                     //TODO we need to add more cases for the other ways to interact with our pet
