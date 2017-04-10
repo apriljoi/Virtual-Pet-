@@ -32,7 +32,7 @@ namespace VirtualPet_Template
         //this defaut constructor sets options without giving us any options
         public VirtualPet()
         {
-            this.hiMyNameIs = "Glitch";
+            this.hiMyNameIs = "Glitch the Giraffe"; //Glitch was just Glitch for a while, I couldn't figure out an animal
             this.imHungry = 10;
             this.imBored = 10;
             this.imSick = 10;

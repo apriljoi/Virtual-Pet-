@@ -88,11 +88,14 @@ namespace VirtualPet_Template
                 myPet.HungerIncrease();
                 myPet.MoreThirsty();
                 myPet.GottaGoNow();
+
+                //***Your methods should cause the appropriate fields to update - 
+                //***for instance, if you have a Feed() method, it might make Hunger go down, but make Thirst go up.
                 //Note to self: I understand that these methods are being called and that's why they work
                 //figure out why calling the method works vs using an if else statement
                 //also figure out if an if else can be used in a loop for more control of what increases and why
                 //for example thirst increasing after eating or playing...
-                
+
             } while (selectedOption != 10); //The switch was inside of a loop allowing the magic to happen. 
                                             //it really makes so much sense now!
 
